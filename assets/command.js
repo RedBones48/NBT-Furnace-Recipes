@@ -50,32 +50,11 @@ function command() {
 	  var a = document.getElementById("itemInIDText").value;
 	  var a1 = text1+''+space+'|'+space+'|'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'|'+space+'|'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'|'+space+'|'+space2+''+text2+''+space+'|'+space+'|'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
 	}
-    if(document.getElementById("itemInIDText").value == ''" || 
-       document.getElementById("itemOutIDText").value == ''" || 
-       document.getElementById("itemInIDText").value == ''")  {
-           var ta = 1;
-    } else {
-           var ta = 0;
-    }
-    if(document.getElementById("itemInIDText").value == ''" || 
-       document.getElementById("itemOutIDText").value == ''" || 
-       document.getElementById("recipeIDText").value == ''")  {
-           var tb = 1;
-    } else {
-           var tb = 0;
-    }
-    if(document.getElementById("itemInIDText").value == ''" || 
-       document.getElementById("itemOutIDText").value == ''" || 
-       document.getElementById("outIDText").value == ''")  {
-           var tc = 1;
-    } else {
-           var tc = 0;
-    }
-    var ta += tb;
-    var ta += tc;
-    if(ta == 3)  {
-           $('#commandText').hide();
-    } else {
-           $('#commandText').show();
-    }
+        if (document.getElementById("itemInIDText").value == "" && 
+	document.getElementById("itemOutIDText").value == "" && 
+	document.getElementById("recipeIDText").value == "") {
+            document.querySelector("#commandText").style.display = "none";
+        } else {
+            document.querySelector("#commandText").style.display = "";
+        }
 }
