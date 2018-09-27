@@ -50,6 +50,13 @@ function command() {
 	  var a = document.getElementById("itemInIDText").value;
 	  var a1 = text1+''+space+'|'+space+'|'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'|'+space+'|'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'|'+space+'|'+space2+''+text2+''+space+'|'+space+'|'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
 	}
+    var cmd1 = document.getElementById("itemInIDText").value;
+    var cmd2 = document.getElementById("itemOutIDText").value;
+    var cmd3 = document.getElementById("itemInIDText").value;
+    var cmd4 += cmd1
+    var cmd4 += cmd2
+    var cmd4 += cmd3
+    alert("lol "+cmd4+" lmao");
   function_cmdText();
 }
 
