@@ -54,6 +54,8 @@ function command() {
           if(document.getElementById("itemOutIDText").value == ''){
                 if(document.getElementById("recipeIDText").value == ''){
 		      $('#commandText').hide();
+    }
+    }
     }else{
 	  $('#commandText').show();
 	}
