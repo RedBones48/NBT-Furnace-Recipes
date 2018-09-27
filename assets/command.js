@@ -54,23 +54,5 @@ function command() {
 }
 
 function function_detectText() {
-    var cmdA = 0;
-    var cmdB = 0;
-    var cmdC = 0;
-    if(document.getElementById("itemInIDText").value == ''){
-      cdmA = 1;
-    }
-    if(document.getElementById("itemOutIDText").value == ''){
-      cmdB = 1;
-    }
-    if(document.getElementById("recipeIDText").value == ''){
-      cmdC = 1;
-    }
-    cmdA += cmdB
-    cmdA += cmdC;
-    if (cmdA == 0) {
-      $('#commandText').hide();
-    }else{
-      $('#commandText').show();
-    }
+    $('#commandText').hide();
 }
