@@ -53,10 +53,15 @@ function command() {
     var cmd1 = document.getElementById("itemInIDText").value;
     var cmd2 = document.getElementById("itemOutIDText").value;
     var cmd3 = document.getElementById("itemInIDText").value;
-    var cmd4 += cmd1
-    var cmd4 += cmd2
-    var cmd4 += cmd3
-    alert("lol "+cmd4+" lmao");
+    var cmd4 = 0;
+    cmd4 += cmd1;
+    cmd4 += cmd2;
+    cmd4 += cmd3;
+    if( cmd4 == 0){
+	  $('#commandText').hide();
+    }else{
+	  $('#commandText').show();
+	}
   function_cmdText();
 }
 
