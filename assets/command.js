@@ -41,14 +41,14 @@ function command() {
 	  var c = document.getElementById("itemOutIDText").value;
 	}
     var a = document.getElementById("itemInIDText").value;
-	var a1 = text1+''+space+'<br />'+space+'<br />'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'<br />'+space+'<br />'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'<br />'+space+'<br />'+space2+''+text2+''+space+'<br />'+space+'<br />'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
+	var a1 = text1+''+space+'\n'+space+'\n'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'\n'+space+'\n'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'\n'+space+'\n'+space2+''+text2+''+space+'\n'+space+'\n'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
 	document.getElementById("commandText").innerHTML = a1;
     if(document.getElementById("itemInIDText").value == ''){
 	  var a1 = ''
 	  document.getElementById("commandText").innerHTML = a1;
     }else{
 	  var a = document.getElementById("itemInIDText").value;
-	  var a1 = text1+''+space+'<br />'+space+'<br />'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'<br />'+space+'<br />'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'<br />'+space+'<br />'+space2+''+text2+''+space+'<br />'+space+'<br />'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
+	  var a1 = text1+''+space+'\n'+space+'\n'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'\n'+space+'\n'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'\n'+space+'\n'+space2+''+text2+''+space+'\n'+space+'\n'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
 	}
     if (document.getElementById("itemInIDText").value == "" || document.getElementById("itemOutIDText").value == "" || document.getElementById("recipeIDText").value == "") {
         document.querySelector("#commandText").style.display = "none";
