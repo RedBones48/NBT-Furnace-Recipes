@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/a/b/abtv0rvzpi.ico" type="image/x-icon" />
+	<link rel="icon" href="http://www.iconj.com/ico/a/b/abtv0rvzpi.ico">
+    <title>NBT Furnace Recipes Generator</title>
+	<script src="base/js_api.js"></script>
+	<script src="assets/credits.js"></script>
+	<script src="assets/command.js"></script>
+	<script src="assets/info.js"></script>
+
+<style>
+body {
+        background-image: url("assets/background.png");
+} 
+textarea::-webkit-input-placeholder {
+    color: black;
+}
+textarea::-ms-input-placeholder {
+    color: black;
+}
+textarea::-moz-placeholder {
+    opacity: 1; /* unlike the other browsers, firefox's user agent stylesheet sets a transparency on the text */
+    color: black;
+}
+</style>
+</head>
+<body>
+<p id="1"></p>
+<p id="2"></p>
+<p id="3"></p>
+<p id="4"></p>
+<div>
+     <label><input onclick="info()" type="image" src="assets/button_5.png"> </label>
+</div>
+<div>
+     <label><input onclick="window.location.href='https://dmanager.stevertus.com/pack/javier107:nfr'" type="image" src="assets/button_3.png"> </label>
+</div>
+<div>
+     <label><input onclick="window.location.href='https://discord.gg/mNRSvFD'" type="image" src="assets/button_2.png"> </label>
+</div>
+<div>
+     <label><input onclick="credits()" type="image" src="assets/button_1.png"> </label>
+</div>
+<div id="itemInID" style="position: absolute; right: 725px; top: 74px;">
+    <textarea style="background-color: gray" rows="4" id="itemInIDText" oninput="command();" placeholder="Ingredient Item/Block ID (This field is required)"></textarea>
+</div>
+<div id="itemInNBT" style="position: absolute; right: 725px; top: 260px;">
+    <textarea style="background-color: gray" rows="4" id="itemInNBTText" oninput="command();" placeholder="Ingredient Item/Block NBT (This is an optional field)"></textarea>
+</div>
+<div id="itemOutID" style="position: absolute; right: 470px; top: 74px;">
+    <textarea style="background-color: gray" rows="4" id="itemOutIDText" oninput="command();" placeholder="Result Item/Block ID (This field is required)"></textarea>
+</div>
+<div id="itemOutNBT" style="position: absolute; right: 470px; top: 260px;">
+    <textarea style="background-color: gray" rows="4" id="itemOutNBTText" oninput="command();" placeholder="Result Item/Block NBT (This is an optional field)"></textarea>
+</div>
+<div id="commandOutput" style="position: absolute; right: 10px; top: 100px;">
+    <textarea style="background-color: gray" rows="30" cols="42" id="commandText" placeholder="Commands Will Appear Here"></textarea>
+</div>
+<div id="recipeID" style="position: absolute; right: 885px; top: 150px;">
+    <textarea style="background-color: gray" cols="8" rows="6" id="recipeIDText" oninput="command();" placeholder="Recipe Number ID (This field is required)"></textarea>
+</div>
+</body>
+</html>
