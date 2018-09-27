@@ -90,5 +90,5 @@ function function_alert1() {
 }
 
 function function_alert() {
-    alert("emptu");
+    alert("empty");
 }
