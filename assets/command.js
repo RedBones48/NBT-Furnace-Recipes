@@ -52,7 +52,28 @@ function command() {
 	}
     if(document.getElementById("itemInIDText").value == ''" || 
        document.getElementById("itemOutIDText").value == ''" || 
+       document.getElementById("itemInIDText").value == ''")  {
+           var ta = 1;
+    } else {
+           var ta = 0;
+    }
+    if(document.getElementById("itemInIDText").value == ''" || 
+       document.getElementById("itemOutIDText").value == ''" || 
        document.getElementById("recipeIDText").value == ''")  {
+           var tb = 1;
+    } else {
+           var tb = 0;
+    }
+    if(document.getElementById("itemInIDText").value == ''" || 
+       document.getElementById("itemOutIDText").value == ''" || 
+       document.getElementById("outIDText").value == ''")  {
+           var tc = 1;
+    } else {
+           var tc = 0;
+    }
+    var ta += tb;
+    var ta += tc;
+    if(ta == 3)  {
            $('#commandText').hide();
     } else {
            $('#commandText').show();
