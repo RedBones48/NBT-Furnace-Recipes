@@ -82,6 +82,7 @@ function function_detectText() {
     }else{
       function_alert();
     }
+    document.getElementById("demo").innerHTML = cmdA;
 }
 
 function function_alert1() {
