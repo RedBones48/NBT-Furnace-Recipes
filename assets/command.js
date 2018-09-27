@@ -60,11 +60,11 @@ function command() {
     cmd4 += cmd1;
     cmd4 += cmd2;
     cmd4 += cmd3;
-    if( cmd4 == 0){
-	  $('#commandText').hide();
+    if (cmd4 == 0) {
+      $('#commandText').hide();
     }else{
-	  $('#commandText').show();
-	}
+      $('#commandText').show();
+    }
   function_cmdText();
 }
 
