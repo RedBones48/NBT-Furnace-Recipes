@@ -56,9 +56,5 @@ function command() {
            $('#commandText').hide();
     } else {
            $('#commandText').show();
-}
-}
-
-function function_detectText() {
-    $('#commandText').hide();
+    }
 }
