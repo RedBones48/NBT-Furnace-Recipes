@@ -10,6 +10,12 @@
 	<script src="assets/hideText.js"></script>
 
 <style>
+img {
+    position: absolute;
+    right: 350px;
+    top: 0px;
+    z-index: -1;
+}
 body {
         background-image: url("assets/background.png");
 } 
@@ -60,9 +66,8 @@ textarea::-moz-placeholder {
 <div id="recipeID" style="position: absolute; right: 885px; top: 150px;">
     <textarea style="background-color: gray" cols="8" rows="6" id="recipeIDText" oninput="command();" placeholder="Recipe Number ID (This field is required)"></textarea>
 </div>
-<div>
-     <label><input onclick="window.location.href='https://javier107.github.io/NBT-Furnace-Recipes-Generator/assets/furnace.png'" type="image" src="assets/furnace.png"> </label>
-</div>
-	
+
+<img src="assets/furnace.png" width="655" height="654">
+
 </body>
 </html>
