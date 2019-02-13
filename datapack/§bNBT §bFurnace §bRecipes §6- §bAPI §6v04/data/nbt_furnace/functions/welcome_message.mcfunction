@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"\n§bSuccessfully §bInstalled §bNBT §bFurnace §bRecipes §6- §bAPI §6v04 §bby §6Javier107\n","hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"§a[file/§bNBT §bFurnace §bRecipes §6- §bAPI §6v04§a]\n\n§bNBT §bFurnace §bRecipes §6- §bAPI §6v04\n§bNBT §bFurnace §bRecipes §6- §bAPI §bby §6Javier107"}]}}}]
