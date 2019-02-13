@@ -9,4 +9,4 @@
 
 ![](https://raw.githubusercontent.com/Javier107/NBT-Furnace-Recipes/master/wiki/custom_recipes.png)
 
-<h3><b><a href="https://github.com/Javier107/NBT-Furnace-Recipes/wiki/NBT-Furnace-Recipes-Wiki-(Page-1)">NFR Wiki</a></b></h3>
+<h3>Continue to : <b><a href="https://github.com/Javier107/NBT-Furnace-Recipes/wiki/NBT-Furnace-Recipes-Wiki-(Page-1)">NFR Wiki</a></b></h3>
