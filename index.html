@@ -8,6 +8,24 @@
 	<script src="assets/command.js"></script>
 	<script src="assets/info.js"></script>
 	<script src="assets/hideText.js"></script>
+        <script>
+        function changeTextF() {
+          document.getElementById("furnaceTypeText").value = "furnace";
+	  command();
+        }
+        </script>
+        <script>
+        function changeTextB() {
+          document.getElementById("furnaceTypeText").value = "blast_furnace";
+	  command();
+        }
+        </script>
+	<script>
+        function changeTextS() {
+          document.getElementById("furnaceTypeText").value = "smoker";
+	  command();
+        }
+        </script>
 
 <style>
 img {
@@ -42,6 +60,14 @@ textarea::-moz-placeholder {
 <div>
      <label><input onclick="window.location.href='https://github.com/Javier107/NBT-Furnace-Recipes/wiki/NBT-Furnace-Recipes-Wiki-(Page-1)'" type="image" src="assets/button_3.png"> </label>
 </div>
+<div>
+     <label><button type="button" onclick="changeTextF()">Furnace</button></label>
+<div>
+<div>
+     <label><button type="button" onclick="changeTextS()">Smoker</button></label>
+<div>
+<div>
+     <label><button type="button" onclick="changeTextB()">Blast Furnace</button></label>
 <div>
      <label><input onclick="window.location.href='https://discord.gg/mNRSvFD'" type="image" src="assets/button_2.png"> </label>
 </div>
