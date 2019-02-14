@@ -1,9 +1,6 @@
 function command() {
 	var space = '                                                                                        '
 	var space2 = '                                                                                        '
-	var text1 = '#Commands for the Function that go in the FunctionTag "furnace_ids" :'
-	var text2 = '#Command for the Function that go in the FunctionTag "furnace_output" :'
-	var text3 = 'execute if block ~ ~ ~ minecraft:furnace'
     var e = document.getElementById("recipeIDText").value;
     if(document.getElementById("recipeIDText").value == ''){
 	  var e = ''
@@ -41,14 +38,14 @@ function command() {
 	  var c = document.getElementById("itemOutIDText").value;
 	}
     var a = document.getElementById("itemInIDText").value;
-	var a1 = text1+''+space+'\n'+space+'\n'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'\n'+space+'\n'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'\n'+space+'\n'+space2+''+text2+''+space+'\n'+space+'\n'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
+	var a1 = 'execute if score @s nf_var_4 matches 1 if block ~ ~ ~ minecraft:furnace{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_var_5 '+e+'\n\nexecute if score @s nf_var_4 matches '+e+' if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_var_6 '+e+'\n\nexecute if score @s nf_var_4 matches 4 if score @s nf_var_5 matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
 	document.getElementById("commandText").innerHTML = a1;
     if(document.getElementById("itemInIDText").value == ''){
 	  var a1 = ''
 	  document.getElementById("commandText").innerHTML = a1;
     }else{
 	  var a = document.getElementById("itemInIDText").value;
-	  var a1 = text1+''+space+'\n'+space+'\n'+space2+''+text3+'{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_item_in '+e+''+space+'\n'+space+'\n'+space2+'execute if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_item_out '+e+''+space+'\n'+space+'\n'+space2+''+text2+''+space+'\n'+space+'\n'+space2+'execute if score @s nf_item_in matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
+	  var a1 = 'execute if score @s nf_var_4 matches 1 if block ~ ~ ~ minecraft:furnace{Items:[{Slot:0b,id:"minecraft:'+a+'"'+b1+'}]} run scoreboard players set @s nf_var_5 '+e+'\n\nexecute if score @s nf_var_4 matches '+e+' if block ~ ~ ~ minecraft:furnace{Items:[{Slot:2b,id:"minecraft:'+c+'"'+d1+'}]} run scoreboard players set @s nf_var_6 '+e+'\n\nexecute if score @s nf_var_4 matches 4 if score @s nf_var_5 matches '+e+' run replaceitem block ~ ~ ~ container.2 '+c+''+f1
 	}
     if (document.getElementById("itemInIDText").value == "" || document.getElementById("itemOutIDText").value == "" || document.getElementById("recipeIDText").value == "") {
         document.querySelector("#commandText").style.display = "none";
