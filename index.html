@@ -11,7 +11,7 @@
         <script>
         function changeTextF() {
           var ftype = document.getElementById('furnaceTypeP');
-          ftype.innerHTML = 'Select a furnace for the recipe\nSelected : Normal Furnace';
+          ftype.innerHTML = 'Selected : Normal Furnace';
           document.getElementById("furnaceTypeText").value = "furnace";
 	  command();
         }
@@ -19,7 +19,7 @@
         <script>
         function changeTextB() {
           var ftype = document.getElementById('furnaceTypeP');
-          ftype.innerHTML = 'Select a furnace for the recipe\nSelected : Blast Furnace';
+          ftype.innerHTML = 'Selected : Blast Furnace';
           document.getElementById("furnaceTypeText").value = "blast_furnace";
 	  command();
         }
@@ -27,7 +27,7 @@
 	<script>
         function changeTextS() {
           var ftype = document.getElementById('furnaceTypeP');
-          ftype.innerHTML = 'Select a furnace for the recipe\nSelected : Smoker';
+          ftype.innerHTML = 'Selected : Smoker';
           document.getElementById("furnaceTypeText").value = "smoker";
 	  command();
         }
@@ -79,8 +79,11 @@ textarea::-moz-placeholder {
 </div>
 <div style="position: absolute; right: 1218px; top: 535px; width="1000" height="1000">
      <label><input type="image" onclick="changeTextB()" src="assets/blast_furnace_icon.png"></label>
-<div id="ifurnaceTypeP1" style="position: absolute; right: 1218px; top: 525px;">
-    <p id="furnaceTypeP">Select a furnace for the recipe\nSelected : Normal Furnace</p>
+<div id="ifurnaceTypeP2" style="position: absolute; right: 1218px; top: 515px;">
+    <p id="furnaceTypeP3">Select a furnace for the recipe</p>
+</div>
+<div id="ifurnaceTypeP1" style="position: absolute; right: 1119px; top: 525px;">
+    <p id="furnaceTypeP">Selected : Normal Furnace</p>
 </div>
 </div>
 <div id="itemInID" style="position: absolute; right: 723px; top: 74px;">
