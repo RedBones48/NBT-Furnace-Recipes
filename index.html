@@ -10,7 +10,7 @@
 	<script src="assets/hideText.js"></script>
         <script>
         function changeTextF() {
-          document.body.getElementById("furnaceTypeP1").style = "position: absolute; right: -159px; top: -70px;"
+          document.getElementById("furnaceTypeP1").style = "position: absolute; right: -159px; top: -70px;"
           var ftype = document.getElementById('furnaceTypeP');
           ftype.innerHTML = 'Selected : Normal Furnace';
           document.getElementById("furnaceTypeText").value = "furnace";
@@ -19,7 +19,7 @@
         </script>
         <script>
         function changeTextB() {
-          document.body.getElementById("furnaceTypeP1").style = "position: absolute; right: -147px; top: -70px;"
+          document.getElementById("furnaceTypeP1").style = "position: absolute; right: -147px; top: -70px;"
           var ftype = document.getElementById('furnaceTypeP');
           ftype.innerHTML = 'Selected : Blast Furnace';
           document.getElementById("furnaceTypeText").value = "blast_furnace";
@@ -28,7 +28,7 @@
         </script>
 	<script>
         function changeTextS() {
-          document.body.getElementById("furnaceTypeP1").style = "position: absolute; right: -128px; top: -70px;"
+          document.getElementById("furnaceTypeP1").style = "position: absolute; right: -128px; top: -70px;"
           var ftype = document.getElementById('furnaceTypeP');
           ftype.innerHTML = 'Selected : Smoker';
           document.getElementById("furnaceTypeText").value = "smoker";
@@ -78,10 +78,10 @@ textarea::-moz-placeholder {
 </div>
 <div style="position: absolute; right: 1218px; top: 535px; width="1000" height="1000">
      <label><input type="image" onclick="changeTextB()" src="assets/blast_furnace_icon.png"></label>
-<div id="ifurnaceTypeP2" style="position: absolute; right: -175px; top: -90px;">
+<div id="furnaceTypeP2" style="position: absolute; right: -175px; top: -90px;">
     <p style="font-size: 20px" id="furnaceTypeP3">Select a furnace for the recipe</p>
 </div>
-<div id="ifurnaceTypeP1" style="position: absolute; right: -159px; top: -70px;">
+<div id="furnaceTypeP1" style="position: absolute; right: -159px; top: -70px;">
     <p style="font-size: 20px" id="furnaceTypeP">Selected : Normal Furnace</p>
 </div>
 </div>
