@@ -10,18 +10,24 @@
 	<script src="assets/hideText.js"></script>
         <script>
         function changeTextF() {
+          var ftype = document.getElementById('furnaceTypeP');
+          ftype.innerHTML = 'Select a furnace for the recipe\nSelected : Normal Furnace';
           document.getElementById("furnaceTypeText").value = "furnace";
 	  command();
         }
         </script>
         <script>
         function changeTextB() {
+          var ftype = document.getElementById('furnaceTypeP');
+          ftype.innerHTML = 'Select a furnace for the recipe\nSelected : Blast Furnace';
           document.getElementById("furnaceTypeText").value = "blast_furnace";
 	  command();
         }
         </script>
 	<script>
         function changeTextS() {
+          var ftype = document.getElementById('furnaceTypeP');
+          ftype.innerHTML = 'Select a furnace for the recipe\nSelected : Smoker';
           document.getElementById("furnaceTypeText").value = "smoker";
 	  command();
         }
@@ -65,14 +71,17 @@ textarea::-moz-placeholder {
 <div>
      <label><input onclick="credits()" type="image" src="assets/button_1.png"> </label>
 </div>
-<div style="position: absolute; right: 1020px; top: 550px; width="1000" height="1000">
+<div style="position: absolute; right: 1020px; top: 535px; width="1000" height="1000">
      <label><input type="image" onclick="changeTextF()" src="assets/furnace_icon.png"></label>
 </div>
-<div style="position: absolute; right: 1119px; top: 550px; width="1000" height="1000">
+<div style="position: absolute; right: 1119px; top: 535px; width="1000" height="1000">
      <label><input type="image" onclick="changeTextS()" src="assets/smoker_icon.png"></label>
 </div>
-<div style="position: absolute; right: 1218px; top: 550px; width="1000" height="1000">
+<div style="position: absolute; right: 1218px; top: 535px; width="1000" height="1000">
      <label><input type="image" onclick="changeTextB()" src="assets/blast_furnace_icon.png"></label>
+<div id="ifurnaceTypeP1" style="position: absolute; right: 1218px; top: 525px;">
+    <p id="furnaceTypeP">Select a furnace for the recipe\nSelected : Normal Furnace</p>
+</div>
 </div>
 <div id="itemInID" style="position: absolute; right: 723px; top: 74px;">
     <textarea style="background-color: gray" rows="4" id="itemInIDText" oninput="command();" placeholder="Ingredient Item/Block ID (This field is required)"></textarea>
